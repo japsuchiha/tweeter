@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tweeter Sentiment</title>
+
+    <!-- materialize for styling; looks a bit nicer than bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- font-awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- sample tweets and sentiment data (as globals) -->
+    <script src="data/tweets.js"></script>
+    <script src="data/sentiments-nrc.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <!-- content -->
+        <h1><i class="fa fa-twitter"></i> Twitter Sentiment</h1>
+
+        <div class="input-field">
+            <select onchange="handleChange()">
+                <option value="pie" selected>Pie Chart</option>
+                <option value="bar">Bar Chart</option>
+                <option value="circle">Circle</option>
+            </select>
+        </div>
+        <div class="content">        
+        <table id="sentiment-table" class="bordered highlight">
+            <thead>
+                <tr>
+                    <th>Emotion</th>
+                    <th>% of Words</th>
+                    <th>Example Words</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Table content will go here-->
+            </tbody>
+        </table>
+        <div class="visual">
+            <svg height="210" width="400">
+            </svg>
+        </div>
+    </div>
+    </div>
+    <!-- end content -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "sentiment",
+  "version": "1.0.0",
+  "description": "This folder contains code for displaying sentiment analysis of Twitter timelines, created as part of the JavaScript Challenge.",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-server" : "live-server"
+  },
+  "author": "japneet",
+  "license": "ISC"
+}

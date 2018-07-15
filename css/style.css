@@ -1,0 +1,31 @@
+/* styling goes here */
+
+#searchBox {
+  max-width: 30%; /* don't fill the page */
+}
+
+.fa-twitter {
+  color:#55acee;
+}
+
+table {
+  width:auto; /* fit to contents */
+}
+
+.content{
+  display: flex;
+  align-items: center;
+}
+
+select{
+  display: block;
+  width: 50%;
+}
+
+.visual{
+  margin-left: 3rem;
+}
+
+.tooltip{
+  position: absolute;
+}
